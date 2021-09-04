@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Clock from './components/Clock';
 
 function App() {
+
+  const myStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    margin: 'auto',
+    alignItems: 'center',
+    width: 250,
+    height: '100%',
+    backgroundColor: "green",
+    color: "white",
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={myStyle}>
+      <Clock />
     </div>
   );
 }
